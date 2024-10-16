@@ -1,0 +1,207 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Slightly smaller font size */
+    color: #007BFF;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    display: block; /* Make the table a block element for responsiveness */
+}
+
+table th, table td {
+    padding: 10px; /* Reduced padding for a tighter layout */
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: 500; /* Lighter font weight for better readability */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Image styles within table cells */
+table td img {
+    max-width: 100%; /* Responsive image within table */
+    height: auto;
+    border-radius: 4px; 
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 16px; 
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem; /* Increased font size for better visibility */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 4px; 
+}
+
+form input[type="text"], form textarea {
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem; 
+    width: 90%;
+    background-color: #f9f9f9;
+}
+
+/* Textarea specific styling */
+form textarea {
+    resize: vertical;
+    min-height: 120px; 
+}
+
+/* Button within form */
+form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 12px; 
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem; /* Increased font size for better visibility */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Secondary button styles */
+a.btn {
+    background-color: #6c757d;
+    margin-bottom: 10px;
+}
+
+a.btn:hover {
+    background-color: #5a6268;
+}
+
+.b {
+    text-decoration: none;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+/* Button styles for Edit and Delete */
+.edit, .hapus {
+    padding: 10px 15px;
+    margin: 5px; /* Space between buttons */
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    display: flex; /* Ensure it behaves like a block button */
+    font-size: 1rem; /* Increased font size for better visibility */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition effects */
+}
+
+/* Edit button specific styles */
+.edit {
+    background-color: #28a745; /* Green background for edit */
+}
+
+.edit:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Delete button specific styles */
+.hapus {
+    background-color: red; /* Red background for delete */
+}
+
+.hapus:hover {
+    background-color: darkred; /* Darker red on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.6rem; /* Adjusted for smaller screens */
+    }
+
+    table {
+        overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+        display: block; /* Make the table block element */
+        width: 100%; /* Ensure table width is responsive */
+    }
+
+    table th, table td {
+        padding: 8px; /* Reduced padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full-width on small screens */
+        text-align: center;
+        padding: 12px; /* Increased padding for better touch targets */
+        font-size: 1rem; /* Increased font size for visibility */
+    }
+
+    /* Adjust button container for small screens */
+    .button-container {
+        flex-direction: column; /* Change direction to column */
+    }
+
+    button {
+        margin: 5px 0; /* Space between buttons in column layout */
+    }
+}
